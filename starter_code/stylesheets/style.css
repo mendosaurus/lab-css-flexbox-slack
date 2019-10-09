@@ -121,6 +121,7 @@ nav grey: #5b5e6d;
     .footer-menu{
         text-align: center;
         padding: 1rem 1.5rem;
+        color: #5b5e6d;
     }
     .footer-menu > ul{
         list-style: none;
