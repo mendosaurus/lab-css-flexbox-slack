@@ -5,3 +5,141 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* color */
+.background-grey{
+    background-color: #F4F3F4;
+}
+.background-purple{
+    background-color: #611f69;
+}
+.dark-grey{
+    color: #2C303F;
+}
+.grey{
+    color: #5b5e6d;
+}
+@media(max-width: 769px){
+    html{
+        font-size: 10px;
+    }
+    body{
+        margin: 0;
+        font-size: 1.8rem;
+    }
+    img{
+        max-width: 100%;
+    }
+    p{
+        line-height: 1.5;
+    }
+    /* nav */
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        border-bottom:1px solid lightgray;
+    }
+    nav > img{
+        width: 10rem;
+    }
+    nav > ul{
+        display: none;
+    }
+    /* header */
+    header {
+        padding: 1rem 1.5rem;
+        font-size: 1.8rem;
+    }
+    header h1{
+       font-size: 3.2rem; 
+    }
+    input, button{
+        font-size: 1.6rem;
+        margin-bottom: 1.2rem;
+        padding:1.8rem;
+        width: 100%;
+        border-radius: 4px;
+    }
+    header input{
+        box-sizing: border-box;
+        border: 1px solid #5b5e6d;
+    }
+    header button{
+        color: #fff;
+        border: none;
+    }
+    .sign-in{
+        text-align: center;
+    }
+
+    /* main */
+    main{
+        padding: 1rem 1.5rem;
+        font-size: 1.8rem;
+        text-align: center;
+        color: #5b5e6d;
+    }
+    main button{
+        color: #fff;
+    }
+    .sponsor img{
+        padding: 5rem;
+        box-sizing: border-box;
+        border-bottom: 1px solid lightgray;
+    }
+    .sponsor:last-child{
+        border-bottom:none;
+    }
+    .btn1{
+        background-color: #fff;
+        color: #192592;
+        border: #192592 1px solid;
+    }
+    /* footer */
+    footer{
+        padding: 1rem 1.5rem;
+        font-size: 1.8rem;
+        color: #5b5e6d;
+    }
+    .footer-list{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .footer-list > ul{
+        list-style: none;
+        padding: 0;
+        line-height: 2.5;
+    }
+    .footer-list>ul>li:first-child {
+        font-weight: bold;
+    }
+    .slack-icon{
+        width: 10rem;
+    }
+    .footer-menu{
+        text-align: center;
+    }
+    .footer-menu > ul{
+        list-style: none;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    .footer-bar{
+        display: flex;
+        flex-direction: column;
+    }
+    .usa-icon{
+        width: 3rem;
+    }
+    .footer-bar > ul{
+        padding: 0;
+    }
+    .footer-bar > ul > i{
+        padding: 1rem;
+    }
+}
