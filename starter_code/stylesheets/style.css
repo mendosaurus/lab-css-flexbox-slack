@@ -19,13 +19,18 @@ nav grey: #5b5e6d;
 .grey{
     color: #5b5e6d;
 }
-@media(max-width: 769px){
+body{
+    font-family: sans-serif;
+}
+
+@media(max-width: 767px){
     html{
         font-size: 10px;
     }
     body{
         margin: 0;
         font-size: 1.8rem;
+        font-weight: 100;
     }
     img{
         max-width: 100%;
@@ -33,10 +38,12 @@ nav grey: #5b5e6d;
     p{
         line-height: 1.5;
     }
+
     /* nav */
     nav{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 1rem 1.5rem;
         border-bottom:1px solid lightgray;
     }
@@ -46,6 +53,7 @@ nav grey: #5b5e6d;
     nav > ul{
         display: none;
     }
+
     /* header */
     header {
         padding: 1rem 1.5rem;
@@ -79,6 +87,7 @@ nav grey: #5b5e6d;
         font-size: 1.8rem;
         text-align: center;
         color: #5b5e6d;
+        border-bottom:1px solid lightgray;
     }
     main button{
         color: #fff;
@@ -96,26 +105,32 @@ nav grey: #5b5e6d;
         color: #192592;
         border: #192592 1px solid;
     }
+
     /* footer */
     footer{
-        padding: 1rem 1.5rem;
         font-size: 1.8rem;
         color: #5b5e6d;
     }
     .footer-list{
+        padding: 1rem 1.5rem;
+    }
+    .footer-nav{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    .footer-list > ul{
+    .footer-nav > ul{
         list-style: none;
-        padding: 0;
+        padding-left: 2rem;
         line-height: 2.5;
+        flex: 1 40%;
+        /* flex-grow: 1;
+        flex-basis: 40%; */
     }
-    .footer-list>ul>li:first-child {
+    .footer-nav > ul > li:first-child {
         font-weight: bold;
     }
-    .slack-icon{
+    .footer-icon > img{
         width: 10rem;
     }
     .footer-menu{
@@ -125,23 +140,31 @@ nav grey: #5b5e6d;
     }
     .footer-menu > ul{
         list-style: none;
-        font-weight: bold;
+        font-weight: 600;
         display: flex;
         justify-content: space-around;
+        align-content: center;
         flex-wrap: wrap;
-        padding: 1rem;
+        padding: 2rem;
+        margin: 0;
     }
-    .footer-bar{
-        display: flex;
-        flex-direction: column;
+    .select-country{
+        width: 100%;
+        padding-top: 2rem;
     }
-    .usa-icon{
+    .select-country > img{
         width: 3rem;
+        vertical-align: bottom;
     }
-    .footer-bar > ul{
-        padding: 0;
     }
-    .footer-bar > ul > i{
-        padding: 1rem;
+    .footer-sns{
+        padding: 0 1.5rem 2rem 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-sns i{
+        padding:1rem;
     }
 }
